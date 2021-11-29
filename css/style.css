@@ -66,6 +66,18 @@ p{
     font-weight: bold;
 }
 
+.shadow-white:hover{
+    box-shadow: inset 0 0 0 2px white;
+}
+
+.shadow-blue:hover{
+    box-shadow: inset 0 0 0 2px blue;
+}
+
+.shadow-black:hover{
+    box-shadow: inset 0 0 0 2px black;
+}
+
 .button-jumbo{
     background-color: rgb(240, 77, 13);
     width: 100px;
@@ -74,7 +86,19 @@ p{
 
 .console-img img{
     border-radius: 20px;
+    border: 2px solid transparent;
+    padding: 3px;
+    transition: all 0.4s ease-in-out;
 }
+
+.console-img:hover img{
+    border-color: blue;
+    position: relative;
+    top: -10px;
+    cursor: pointer;
+}
+
+
 
 .text-grey{
     color:rgb(100, 100, 100);
@@ -88,6 +112,16 @@ p{
 .button-section-console-ps5{
     background-color: rgb(34, 54, 235);
     color: white;
+}
+
+.opacity{
+    opacity: 0.5;
+}
+
+.opacity:hover{
+    opacity: 1;
+    cursor: pointer;
+    border-bottom: 3px solid blue;
 }
 
 .takes-two{
